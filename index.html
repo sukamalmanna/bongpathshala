@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukamal Manna Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Image/Bong_Pathshala_logo.jpeg" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/a58aa1e9ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#social_share").load("social_share.html");
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- ------------loading Header---------- -->
+    <div id="header"></div>
+
+    <div class="continer">
+        <!-- --------------loading first Section------------- -->
+        <div class="subcontainer">
+            <div class="content_1">
+                <h3>Hey_ There</h3>
+                <h2>Welcome to <br> <span id="text"></span></h2>
+                <p>Welcome to Bong Pathshala . Here you will find all types of educational videos and quit, You can
+                    solve by your own and gain your knowledge</p>
+                <a href="https://www.youtube.com/@BongPathshala" target="_blank"><button>Youtube</button>
+                </a>
+                <a href="https://www.instagram.com/bongpathshala" target="_blank">
+                    <button class="chat">
+                        <i class="fa-regular fa-comments"><span></span></i>Let's Chat</button>
+                </a>
+            </div>
+            <img src="https://lh3.googleusercontent.com/d/1Tyrgpt_qC2HcUlG9eKpFmU3RwW3heGpH" alt="">
+
+        </div>
+        <!-- --------------loading second Section------------- -->
+        
+        <div class="subcontainer">
+            <div class="content_2">
+                <h4>Quizzes</h4>
+                <div class="content_quiz">
+
+                    <a href="/Pages/computer_quiz.html" id="uniqueBtnClick" style="--clr:#1e9bff; "><span>Computer Quiz 1</span><i></i></a>
+                    <a href="#" id="uniqueBtnClick" style="--clr:#ff1867; "><span>Aptitude</span><i></i></a>
+                    <a href="#" id="uniqueBtnClick" style="--clr:#6eff3e; "><span>reasoning </span><i></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------loading share Section------------- -->
+
+        <div class="subcontainer_share">
+            <div class="content_share">
+                <h3>This is our social media accounts</h3>
+                <h2 class="name1">BONG PATHSHALA</h2>
+
+                <!-- ----------loading social icons---------- -->
+                <div class="socialIconShare" id="social_share"></div>
+            </div>
+
+
+
+            <!-- ----------loading social icons---------- -->
+            <!-- <div class="socialIconShare" id="social_share"></div> -->
+
+
+            <!-- ---- Main Continer ----- -->
+        </div>
+
+
+
+        <!-- --------------loading Footer------------------- -->
+
+        <div id="footer"></div>
+
+
+        <!-- --------loading Text for Intro-------- -->
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+        <script>
+            let typingText = new Typed("#text", {
+                strings: ["BONG", "PATHSHALA", "STUDY", "LEARNING"],
+                loop: true,
+                typeSpeed: 50,
+            })
+
+
+
+        </script>
+
+</body>
+
+</html>

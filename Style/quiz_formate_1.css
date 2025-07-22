@@ -1,0 +1,126 @@
+:root {
+    /* Background_primary_colour */
+    --primary: #e91e63;
+    /* trasaparent_background */
+    --secondary: #ffffffdb;
+    --white: #fff;
+    --hover_color: #ffffffbc;
+    --black_mid: #333;
+    --black:#000000;
+    --btn1: #ff1867;
+    --btn2: #1e9bff;
+    --btn3:#6eff3e;
+    --quiz_background_color:linear-gradient(to bottom right, #f84983, #e480a1, #f84983);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--quiz_background_color)
+    
+}
+
+body .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+body .container div {
+    text-align: center;
+    margin-bottom: 2rem;
+    /* background: #2c178b; */
+}
+
+body .container div h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+
+}
+
+body .container div#quizContainer {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    /* background: #e91e63; */
+    
+}
+
+body .container div#quizContainer .question-card {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+     background: #ffffff8a;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+body .container div#quizContainer .question-card h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    /* color: white; */
+    color: var(--black);
+    margin-bottom: 1rem;
+    /* text-align: left; */
+    text-align: justify;
+    
+}
+
+/* body .container div#quizContainer .question-card div {
+            margin-top: 0.5rem;
+        
+        } */
+
+body .container div#quizContainer .question-card div .option-btn {
+    width: 100%;
+    /* text-align: left; */
+    text-align: justify;
+    padding: 0.75rem;
+    /* background-color: rgba(255, 255, 255, 0.011); */
+    /* background: rgba(255, 255, 255, 0.20); */
+    border-radius: 0.25rem;
+    /* color: #fffcfc; */
+    color: #000000;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body .container div#quizContainer .question-card div .option-btn:hover:not([disabled]) {
+    background-color: rgba(255, 255, 255, 0.60);
+    /* background-color: #000000; */
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+body .container div #resetBtn {
+    background-color: #ffffff;
+    color: #e91e63;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+body .container div #resetBtn:hover {
+    background-color: #ffffffc4;
+}

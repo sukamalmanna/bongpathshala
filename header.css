@@ -1,0 +1,170 @@
+ /* ----------Header Design---------- */
+
+
+ .shadowHeader a {
+     text-decoration: none;
+     color: #000;
+ }
+
+ .shadowHeader a:hover {
+     color: #e91e63;
+ }
+
+ body .logoName {
+     position: fixed;
+     background: #fff;
+     border: 2px solid #e91e63;
+     top: 9px;
+     left: 20px;
+     padding: 9px;
+     border-radius: 4px;
+     font-size: 18px;
+     font-weight: 600;
+     cursor: pointer;
+     z-index: 30;
+ }
+
+ body ul {
+     position: fixed;
+     background: #fff;
+     border: 2px solid #e91e63;
+     display: flex;
+     padding: 1px 0;
+     border-radius: 10px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     right: 4%;
+     top: 5px;
+     z-index: 30;
+ }
+
+ body ul.pages_all li {
+     list-style: none;
+     align-items: center;
+     display: block;
+     border-right: 1px solid rgba(0, 0, 0, 0.2);
+     
+ }
+
+ body ul.pages_all li:last-child {
+     border-right: none;
+ }
+
+ body ul.pages_all li a {
+     text-decoration: none;
+     padding: 0 20px;
+     display: flex;
+ }
+
+ body ul.pages_all li a .icon {
+     width: 55px;
+     height: 44px;
+     text-align: center;
+     overflow: hidden;
+ }
+
+ body ul.pages_all li a .icon .fa-solid {
+     width: 100%;
+     height: 100%;
+     line-height: 40px;
+     font: 25px;
+     transition: 0.5s;
+     color: #000;
+ }
+
+ body ul.pages_all li a:hover .icon .fa-solid {
+     transform: translateY(-100%);
+ }
+
+ body ul.pages_all li a:hover .icon .fa-solid:last-child {
+     color: #e91e63;
+ }
+
+ body ul.pages_all li a .name {
+     position: relative;
+     height: 20px;
+     width: 100%;
+     display: block;
+     overflow: hidden;
+     top: 10px;
+     left: 5px;
+ }
+
+ body ul.pages_all li a .name span {
+     display: block;
+     position: relative;
+     color: #000;
+     font-size: 18px;
+     line-height: 20px;
+     transition: 0.5s;
+ }
+
+ body ul.pages_all li a .name span::before {
+     content: attr(data-text);
+     position: absolute;
+     top: -100%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     color: #e91e63;
+ }
+
+ body ul.pages_all li a:hover .name span {
+     transform: translateY(20px);
+ }
+
+ body .menuToggle {
+     position: fixed;
+     z-index: 100000;
+     right: 20px;
+     top: 6px;
+     background: #fff;
+     padding: 9px;
+     font-weight: 600;
+     border-radius: 4px;
+     cursor: pointer;
+     display: none;
+ }
+
+ /* -------------- Screen Size ------------------- */
+
+ @media (max-width:992px) {
+     body .logoName {
+         border: 1.5px solid #e91e63;
+         top: 5px;
+         left: 10px;
+     }
+
+     body .menuToggle {
+         display: block;
+         border: 1.5px solid #e91e63;
+     }
+
+     body ul.pages_all {
+         display: block;
+         padding: 0;
+         width: 90%;
+         top: 50px;
+         overflow: hidden;
+         transition: 0.5s;
+         transform: scaleY(0);
+         transform-origin: top;
+         border: 1.5px solid #e91e63;
+
+     }
+
+     body ul.pages_all.active {
+         transform: scaleY(1);
+     }
+
+     body ul.pages_all li {
+         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+     }
+
+     body ul.pages_all li:last-child {
+         border-bottom: none;
+     }
+
+     body ul.pages_all li a {
+         padding: 0 20px;
+     }
+ }

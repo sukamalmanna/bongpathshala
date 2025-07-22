@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e91e63;
+}
+body .continer {
+    position: relative;
+    top: 65px;
+    color: #fff;
+    /* z-index: -30; */
+    z-index: 0;
+    margin: 0 2px;
+    padding: 0 10px;
+}
+
+.subcontainer {
+    background: #ffffffdb;
+    /* margin: 2px; */
+    /* padding: 2px; */
+    /* border-radius: 4px; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+
+@media (max-width:992px) {
+    body .continer {
+        top: 50px;
+    }
+
+    .subcontainer {
+        display: grid;
+    }
+}
