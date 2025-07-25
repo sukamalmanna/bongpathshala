@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="shadowHeader">
+
+            <div class="menuToggle">Menu</div>
+
+            <a href="index.html">
+                <div class="logoName">Bong Pathshala</div>
+            </a>
+
+            <ul class="pages_all">
+                <li>
+                    <a href="index.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-house-user"></i>
+                            <i class="fa-solid fa-house-user"></i>
+                        </div>
+                        <div class="name"><span data-text="Home">Home</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="study.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <i class="fa-solid fa-book-open-reader"></i>
+                        </div>
+                        <div class="name"><span data-text="Study">Study</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="name"><span data-text="About">About</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-address-card"></i>
+                            <i class="fa-solid fa-address-card"></i>
+                        </div>
+                        <div class="name"><span data-text="Contact">Contact</span></div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </header>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.menuToggle').click(function () {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+
+</body>
+
+</html>
